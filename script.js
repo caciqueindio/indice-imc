@@ -13,7 +13,7 @@ function calcularIMC() {
       alert("Estas en el Peso Adecuado");            
     }
     if (imc > 9){
-      alert("Estas demaciado gordo.");      
+      alert("Estas demasiado gordo.");      
     }
 
   } else {
