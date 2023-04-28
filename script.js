@@ -6,6 +6,16 @@ function calcularIMC() {
   if (peso && altura) {
     const imc = peso / (altura * altura);
     document.querySelector("#resultado").value = imc.toFixed(2);
+    if (imc <= 5 ){
+        alert("Estas un poco flaco");
+    }
+    if (imc > 5 && imc < 10){
+      alert("Estas en el Peso Adecuado");            
+    }
+    if (imc > 9){
+      alert("Estas demaciado gordo.");      
+    }
+
   } else {
     alert("Por favor ingresa tu peso y altura.");
   }
